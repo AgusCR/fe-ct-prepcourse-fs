@@ -53,9 +53,7 @@ function agregarMetodo() {
 
          return(this.nombre+", "+this.edad+" años");
 
-
    }
-
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/

@@ -51,12 +51,12 @@ function agregarStringInvertida() {
    String.prototype.reverse=function(){
       var palabraArreglada;
          var palabraInvertida=[]
-         var palabraSeparada=this.split("");
+         var palabraSeparada=this.split(""); 
 
             for(var i=0; i<this.length;i++){
 
                palabraInvertida.unshift(palabraSeparada[i]);
-
+                     
 
             }
 
