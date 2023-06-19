@@ -87,7 +87,7 @@ function tieneEmail(objetoUsuario) {
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
 
-      return(objetoUsuario.hasOwnProperty.email);
+      return(objetoUsuario.email!=undefined);
 
 
 }
@@ -97,7 +97,7 @@ function tienePropiedad(objeto, propiedad) {
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
 
-      return(objeto[propiedad]=propiedad);
+      return(objeto.hasOwnProperty[propiedad]);
 
 
 }
@@ -108,7 +108,7 @@ function verificarPassword(objetoUsuario, password) {
    // Tu código:
 
 
-   
+
 }
 
 function actualizarPassword(objetoUsuario, nuevaPassword) {
