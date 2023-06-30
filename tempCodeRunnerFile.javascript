@@ -173,26 +173,75 @@
     // mayuscula("pedro")
 
 
-            function identificar(arrayed){
+            // function identificar(arrayed){
 
-                        var arregloConA=[]
-                for(var i=0; i<arrayed.length;i++){
+            //             var arregloConA=[]
+            //     for(var i=0; i<arrayed.length;i++){
 
-                   var nombre=arrayed[i].split("");
+            //        var nombre=arrayed[i].split("");
 
                             
-                            if(nombre[0]=="a"||nombre[0]=="A"){
-                              nombre= nombre.join("");
-                                arregloConA.push(nombre);
+            //                 if(nombre[0]=="a"||nombre[0]=="A"){
+            //                   nombre= nombre.join("");
+            //                     arregloConA.push(nombre);
                                 
-                            }
+            //                 }
 
-                            else {continue}
-                     }
+            //                 else {continue}
+            //          }
 
-                    console.log(arregloConA)
-            }
+            //         console.log(arregloConA)
+            // }
 
             
-            identificar(arregloPrueba=["Aerman","Maro","Manuel"])
+            // identificar(arregloPrueba=["Aerman","Maro","Manuel"])
         
+
+                //De esta forma puedo ver la cantidad de propiedades 
+
+            //  var prueba={
+
+            //   nombre:"Agustin",
+            //   edad: 20
+            //    }
+
+            //      var arregloPadre=[]
+
+            //       for(var prop in prueba)
+            //       arregloPadre.push(crearArreglo(prop,prueba[prop]))
+            //       console.log(arregloPadre)
+    
+            //       function crearArreglo(keyy,valuee){
+
+
+            //       var arregloHijo=[];
+
+            //       arregloHijo[0]=keyy
+            //       arregloHijo[1]=valuee
+
+            //       return(arregloHijo)
+            // }
+
+
+            
+            stringg="asdf gh"
+            stringg=stringg.split(""); // ["C", "C","B","A"]
+            stringg.sort(); //["A","B","C","C"]
+              var contador
+              var ordenYcontar={}
+              
+                  for(var i=0;i<stringg.length; i++){
+                          contador=1
+                            for(var j=0; j<stringg.length;j++){
+                              if(stringg[i]==stringg[j]&&i<j){
+                                contador=contador+1}
+                            } 
+                              
+                            if(ordenYcontar.hasOwnProperty(stringg[i])==false){
+                              ordenYcontar[stringg[i]]=contador
+                            }
+                          
+                        }
+
+                       console.log(ordenYcontar)
+                        

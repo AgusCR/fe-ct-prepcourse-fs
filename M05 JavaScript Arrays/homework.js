@@ -270,11 +270,27 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+      var comprobar
+      var arregloEnviar=[]
+      for(i=0; i<10; i++){
+            num=num+2
+               if(num!=i){ 
+                  arregloEnviar.push(num)
+               }
+               else{
+                  comprobar=false
+                  break;
+               }
 
-    
+      }
 
+         if(comprobar!=false){
+            return(arregloEnviar)
+         }
 
-
+         else{
+            return("Se interrumpió la ejecución")
+         }
 
 }
 
@@ -285,6 +301,26 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+
+   var arreglEnviar=[]
+   for(i=1; i<=10; i++){
+      
+         if(i!=5){ 
+            num=num+2
+            arreglEnviar.push(num)
+         }
+         else
+         {
+          continue
+         }
+         
+
+}
+
+return(arreglEnviar)
+
+
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/

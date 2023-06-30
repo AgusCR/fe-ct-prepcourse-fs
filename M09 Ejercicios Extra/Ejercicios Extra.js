@@ -6,6 +6,24 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
+
+      var arregloPadre=[]
+
+      for(var prop in objeto){
+      arregloPadre.push(crearArreglo(prop,objeto[prop]))
+      }
+
+
+      function crearArreglo(keey,valuee){
+         
+            var arregloHijo=[keey,valuee]               
+
+         return(arregloHijo)
+     }
+
+
+     return(arregloPadre)
+
 }
 
 function numberOfCharacters(string) {
@@ -14,6 +32,28 @@ function numberOfCharacters(string) {
    // Las letras deben estar en orden alfabético.
    // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
    // Tu código:
+
+   string=string.split(""); // ["C", "C","B","A"]
+   string.sort(); //["A","B","C","C"]
+     var contador
+     var ordenYcontar={}
+     
+         for(var i=0;i<string.length; i++){
+                 contador=1
+                   for(var j=0; j<string.length;j++){
+                     if(string[i]==string[j]&&i<j){
+                       contador=contador+1}
+                   } 
+                     
+                   if(ordenYcontar.hasOwnProperty(string[i])==false){
+                     ordenYcontar[string[i]]=contador
+                   }
+                 
+               }
+
+              return(ordenYcontar)
+               
+
 }
 
 function capToFront(string) {
@@ -22,6 +62,10 @@ function capToFront(string) {
    // Retornar el string.
    // [EJEMPLO]: soyHENRY ---> HENRYsoy
    // Tu código:
+
+
+
+   
 }
 
 function asAmirror(frase) {
