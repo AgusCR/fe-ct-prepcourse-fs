@@ -224,24 +224,169 @@
 
 
             
-            stringg="asdf gh"
-            stringg=stringg.split(""); // ["C", "C","B","A"]
-            stringg.sort(); //["A","B","C","C"]
-              var contador
-              var ordenYcontar={}
+            // stringg="asdf gh"
+            // stringg=stringg.split(""); // ["C", "C","B","A"]
+            // stringg.sort(); //["A","B","C","C"]
+            //   var contador
+            //   var ordenYcontar={}
               
-                  for(var i=0;i<stringg.length; i++){
-                          contador=1
-                            for(var j=0; j<stringg.length;j++){
-                              if(stringg[i]==stringg[j]&&i<j){
-                                contador=contador+1}
-                            } 
+            //       for(var i=0;i<stringg.length; i++){
+            //               contador=1
+            //                 for(var j=0; j<stringg.length;j++){
+            //                   if(stringg[i]==stringg[j]&&i<j){
+            //                     contador=contador+1}
+            //                 } 
                               
-                            if(ordenYcontar.hasOwnProperty(stringg[i])==false){
-                              ordenYcontar[stringg[i]]=contador
-                            }
+            //                 if(ordenYcontar.hasOwnProperty(stringg[i])==false){
+            //                   ordenYcontar[stringg[i]]=contador
+            //                 }
                           
-                        }
+            //             }
 
-                       console.log(ordenYcontar)
+            //            console.log(ordenYcontar)
                         
+            //            var arregloPadre=[]
+
+            //            for(var prop in objeto){
+            //            arregloPadre.push(crearArreglo(prop,objeto[prop]))
+            //            }
+                 
+                 
+            //            function crearArreglo(keey,valuee){
+                          
+            //                  var arregloHijo=[keey,valuee]               
+                 
+            //               return(arregloHijo)
+            //           }
+                 
+                 
+            //           return(arregloPadre)
+                 
+                 
+                 
+            //      function numberOfCharacters(string) {
+            //         // La función recibe un string. Debes recorrerlo y retornar un objeto donde cada propiedad es una de las
+            //         // letras del string, y su valor es la cantidad de veces que se repite en el string.
+            //         // Las letras deben estar en orden alfabético.
+            //         // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
+            //         // Tu código:
+                 
+            //         string=string.split(""); // ["C", "C","B","A"]
+            //         string.sort(); //["A","B","C","C"]
+            //           var contador
+            //           var ordenYcontar={}
+                      
+            //               for(var i=0;i<string.length; i++){
+            //                       contador=1
+            //                         for(var j=0; j<string.length;j++){
+            //                           if(string[i]==string[j]&&i<j){
+            //                             contador=contador+1}
+            //                         } 
+                                      
+            //                         if(ordenYcontar.hasOwnProperty(string[i])==false){
+            //                           ordenYcontar[string[i]]=contador
+            //                         }
+                                  
+            //                     }
+                 
+            //                    return(ordenYcontar)
+            //                   }    
+                 
+
+
+
+            // var palabra="soyHENRY"
+            // var palabraRepetida=palabra
+            //   var mayuscula=[]
+            //   var minúscula=[]
+            // palabra=palabra.split("");
+
+            // for(var i=0; i<palabra.length;i++){
+
+            //     if(palabra[i]==palabraRepetida.charAt(i).toLocaleUpperCase()){
+
+            //         mayuscula.push(palabra[i])
+
+            //     }
+            //     else{
+            //           minúscula.push(palabra[i]);
+
+            //     }
+
+            // }
+
+            // minúscula=minúscula.join("");
+            // mayuscula=mayuscula.join("");
+
+            // console.log(mayuscula+minúscula)
+
+
+  //           var frase="AGUS tin"
+          
+
+  //           var res = "";
+  // var str = frase.split(" ");
+  // for ( var i = 0; i < str.length; i++) {
+  //   res += str[i].split("").reverse().join("");
+  //   if ( i !== str.length - 1) {
+  //     res += " ";
+  //   }
+  // }
+  // console.log(res);
+
+  
+      // var numero =105217
+      // var num=numero.toString().split("").reverse().join("")
+
+
+      //   if(num==numero.toString()){
+      //     console.log("Es capicua")
+      //   }
+
+      //   else{
+      //     console.log("No es capicua")
+      //   }
+
+
+      // function ordenarPorLongitud(arr) {
+      //   // Utilizamos el método sort con una función de comparación personalizada
+      //   arr.sort(function(a, b) {
+      //     // Comparamos las longitudes de las palabras
+      //     return a.length - b.length;
+      //   });
+      
+      //   return arr;
+      // }
+      
+      // // Ejemplo de uso
+      // var palabras = ["You", "are", "beautiful", "looking"];
+      // var palabrasOrdenadas = ordenarPorLongitud(palabras);
+      // console.log(palabrasOrdenadas);
+
+          
+
+
+
+  // if(array1.length>array2.length)
+var arrayConjunto=[]
+
+array1=[1,2,3,4]
+array2=[1,5,2,6,7]
+
+        for(var i=0; i<array1.length; i++ ){
+
+            for(var j=0; j<array2.length; j++){
+
+
+                if(array1[i]==array2[j]){
+
+                    arrayConjunto.push(array1[i])
+                }
+
+                else{continue}
+
+              }
+
+          }
+      
+          console.log(arrayConjunto.sort())

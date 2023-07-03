@@ -63,28 +63,99 @@ function capToFront(string) {
    // [EJEMPLO]: soyHENRY ---> HENRYsoy
    // Tu código:
 
+   var palabraRepetida=string
+   var mayuscula=[]
+   var minúscula=[]
+ string=string.split("");
+
+ for(var i=0; i<string.length;i++){
+
+     if(string[i]==palabraRepetida.charAt(i).toLocaleUpperCase()){
+
+         mayuscula.push(string[i])
+
+     }
+     else{
+           minúscula.push(string[i]);
+
+     }
+
+ }
+
+ minúscula=minúscula.join("");
+ mayuscula=mayuscula.join("");
+
+ return(mayuscula+minúscula)
 
 
-   
+
+
 }
-
+ 
 function asAmirror(frase) {
    // Recibes una frase. Tu tarea es retornar un nuevo string en el que el orden de las palabras sea el mismo.
    // La diferencia es que cada palabra estará escrita al inverso.
    // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
    // Tu código:
+
+
+   var res = "";
+   var str = frase.split(" ");
+   for ( var i = 0; i < str.length; i++) {
+     res += str[i].split("").reverse().join("");
+     if ( i !== str.length - 1) {
+       res += " ";
+     }
+   }
+   return res;
 }
 
 function capicua(numero) {
    // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
    // Caso contrario: "No es capicua".
    // Tu código:
+
+
+   
+   var num=numero.toString().split("").reverse().join("")
+
+
+     if(num==numero.toString()){
+       return("Es capicua")
+     }
+
+     else{
+       return("No es capicua")
+     }
+
+
+
+
 }
+
 
 function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
+
+         var arrayPalabra=[]
+         string=string.split("")
+
+         for(var i=0;i<string.length; i++){
+
+                  if(string[i]!="a"&&string[i]!="b"&&string[i]!="c"){
+                     arrayPalabra.push(string[i])
+                  }
+
+                  else{
+                     arrayPalabra.push("");
+                  }
+
+         }
+         arrayPalabra=arrayPalabra.join("")
+         return(arrayPalabra)
+
 }
 
 function sortArray(arrayOfStrings) {
@@ -93,6 +164,25 @@ function sortArray(arrayOfStrings) {
    // de la longitud de cada string.
    // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
+
+            
+      function ordenarPorLongitud(arr) {
+         // Utilizamos el método sort con una función de comparación personalizada
+         arr.sort(function(a, b) {
+           // Comparamos las longitudes de las palabras
+           return a.length - b.length;
+         });
+       
+         return arr;
+       }
+       
+
+       var palabrasOrdenadas = ordenarPorLongitud(arrayOfStrings);
+      return(palabrasOrdenadas);
+                  
+
+
+
 }
 
 function buscoInterseccion(array1, array2) {
@@ -102,6 +192,27 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
+
+   var arrayConjunto=[]
+   for(var i=0; i<array1.length; i++ ){
+
+       for(var j=0; j<array2.length; j++){
+
+
+           if(array1[i]==array2[j]){
+
+               arrayConjunto.push(array1[i])
+           }
+
+           else{continue}
+
+         }
+
+     }
+ 
+     return(arrayConjunto.sort())
+
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
